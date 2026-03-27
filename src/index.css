@@ -56,6 +56,14 @@
   @apply rounded-xl p-2 hover:scale-110 cursor-pointer;
 }
 
+.dockapp.dark{
+    @apply bg-black/80 text-white;
+}
+
+.dockapp.light{
+     @apply bg-white/80 text-black;
+}
+
 .tooltip {
   @apply absolute -top-10 opacity-0 group-hover:opacity-100 transition;
   @apply text-xs bg-black/40 text-white px-2 py-1 rounded-lg;
@@ -66,8 +74,18 @@
 .calculator {
   @apply w-[320px] rounded-3xl p-9;
   @apply border border-white/10;
-  @apply bg-gradient-to-bl from-gray-900/80 to-gray-950/80;
 }
+
+.dark{
+    @apply bg-gradient-to-bl from-gray-900/80 to-gray-950/80;
+}
+
+
+.light{
+    @apply bg-red-500;
+}
+
+
 
 .button {
   @apply h-14 rounded-xl text-lg font-semibold;
